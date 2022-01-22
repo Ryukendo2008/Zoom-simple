@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Zoom</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+                    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+                    crossorigin="anonymous">
+</head>
+<style>
+          #m {
+                    border-right: rgb(24, 23, 23)20px solid;
+          }
+
+          #mic {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+          }
+</style>
+
+<body style="background-color: rgb(24, 23, 23);">
+
+          <section class="container">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 container mt-4">
+                              <div id="m" style="background-color: darkgrey;width:200px;" class="col mb-4">
+                                        <div class="w-50 mx-auto">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+                                                            fill="currentColor" class="bi bi-person mx-auto"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                  </svg>
+                                                  <div class="card-img-overlay position-absolute bottom-0 start-0">
+                                                            <span class="text-white bg-dark">
+                                                                      Username-1
+                                                            </span>
+                                                  </div>
+                                                  <svg id="mic" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                            height="30" fill="currentColor" class="bi bi-mic-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
+                                                            <path
+                                                                      d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                                                  </svg>
+                                        </div>
+                              </div>
+                              <div style="background-color: darkgrey;width:200px;" class="col ms-4 mb-4">
+                                        <div class="w-50 mx-auto">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+                                                            fill="currentColor" class="bi bi-person mx-auto"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                  </svg>
+                                                  <div class="card-img-overlay position-absolute bottom-0 start-0">
+                                                            <span class="text-white bg-dark">
+                                                                      Username-2
+                                                            </span>
+                                                  </div>
+                                                  <svg id="mic" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                            height="30" fill="red" class="bi bi-mic-mute-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3z" />
+                                                            <path
+                                                                      d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z" />
+                                                  </svg>
+                                        </div>
+                              </div>
+                              <div id="m" style="background-color: darkgrey;width:200px;" class="col mb-4">
+                                        <div class="w-50 mx-auto">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+                                                            fill="currentColor" class="bi bi-person mx-auto"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                  </svg>
+                                                  <div class="card-img-overlay position-absolute bottom-0 start-0">
+                                                            <span class="text-white bg-dark">
+                                                                      Username-3
+                                                            </span>
+                                                  </div>
+                                                  <svg id="mic" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                            height="30" fill="red" class="bi bi-mic-mute-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3z" />
+                                                            <path
+                                                                      d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z" />
+                                                  </svg>
+                                        </div>
+                              </div>
+                              <div style="background-color: darkgrey;width:200px;" class="col mb-4">
+                                        <div class="w-50 mx-auto">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+                                                            fill="currentColor" class="bi bi-person mx-auto"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                  </svg>
+                                                  <div class="card-img-overlay position-absolute bottom-0 start-0">
+                                                            <span class="text-white bg-dark">
+                                                                      Username-4
+                                                            </span>
+                                                  </div>
+                                                  <svg id="mic" xmlns="http://www.w3.org/2000/svg" width="30"
+                                                            height="30" fill="red" class="bi bi-mic-mute-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                      d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3z" />
+                                                            <path
+                                                                      d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z" />
+                                                  </svg>
+                                        </div>
+                              </div>
+                    </div>
+          </section>
+
+
+
+          <footer class="py-3" style="background-color: darkgrey;">
+                    <div class="container text-center">
+                              <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                  fill="currentColor" class="bi bi-mic-mute-fill mx-5"
+                                                  viewBox="0 0 16 16">
+                                                  <path
+                                                            d="M13 8c0 .564-.094 1.107-.266 1.613l-.814-.814A4.02 4.02 0 0 0 12 8V7a.5.5 0 0 1 1 0v1zm-5 4c.818 0 1.578-.245 2.212-.667l.718.719a4.973 4.973 0 0 1-2.43.923V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 1 0v1a4 4 0 0 0 4 4zm3-9v4.879L5.158 2.037A3.001 3.001 0 0 1 11 3z" />
+                                                  <path
+                                                            d="M9.486 10.607 5 6.12V8a3 3 0 0 0 4.486 2.607zm-7.84-9.253 12 12 .708-.708-12-12-.708.708z" />
+                                        </svg>
+                                        <p class="text-center mt-2">Mute</p>
+                              </div>
+                              <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                  fill="currentColor" class="bi bi-camera-video-fill mx-5"
+                                                  viewBox="0 0 16 16">
+                                                  <path fill-rule="evenodd"
+                                                            d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                                        </svg>
+                                        <p class="text-center mt-2">Stop Video</p>
+                              </div>
+                              <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                  fill="currentColor" class="mx-5 bi bi-people-fill"
+                                                  viewBox="0 0 16 16">
+                                                  <path
+                                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                  <path fill-rule="evenodd"
+                                                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                                  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                        </svg>
+                                        <p class="text-center mt-2">Manage Participants</p>
+                              </div>
+                              <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green"
+                                                  class="mx-5 bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                                  <path fill-rule="evenodd"
+                                                            d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <p class="text-center mt-2">Share Screen</p>
+                              </div>
+                              <div class="d-inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                  fill="currentColor" class="mx-5 bi bi-chat-fill" viewBox="0 0 16 16">
+                                                  <path
+                                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                        </svg>
+                                        <p class="text-center mt-2">Chat</p>
+                              </div>
+                              <span style="font-size: larger;font-weight:bolder" class="text-danger my-auto mx-5">End
+                                        Meeting</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red"
+                                        class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path
+                                                  d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                              </svg>
+                    </div>
+          </footer>
+
+
+
+
+
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
